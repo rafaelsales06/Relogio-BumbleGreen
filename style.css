@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('DS-DIGI.TTF');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url(imagens/back-double.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family:'digital-clock-font'
+}
+header{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow:  5px 5px 15px black;
+}
+#relogio{
+    width: 900px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.836);
+    box-shadow: 1px 1px 15px #62ff24;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    font-size: 7rem;
+    top: 30%;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+.time{
+    max-width: 300px;
+}
+#secund{
+    color: #62ff24;
+}
+#bumble{
+    color: #62ff24;
+}
+#logo{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #relogio{
+        width: 95%;
+    }
+}
+@media (max-width: 600px) {
+    body{
+        background:url(imagens/back-mobile.png);
+        background-repeat: no-repeat;
+    }
+    #relogio{
+        font-size: 5em;
+    }
+    header{
+        font-size: 30px;
+    }
+}
